@@ -53,8 +53,8 @@ knn_rfr = Pipeline([
 
 vt = VotingRegressor([
     ('simple_etr', simple_etr),
-    ('knn_etr', knn_etr),
-    ('knn_rfr', knn_rfr)
+    # ('knn_etr', knn_etr),
+    # ('knn_rfr', knn_rfr)
 ], n_jobs=-1)
 
 # Fit the model
